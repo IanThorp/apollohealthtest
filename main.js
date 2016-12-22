@@ -5,7 +5,7 @@ $(function() {
 var submitLoginListener = function() {
   $('#login').on('submit', function(e) {
     e.preventDefault();
-    $("#login-error").append(loginErrorHtml);
+    $("#login-error").html(loginErrorHtml);
     $(".input-container").addClass("error-input");
     $(".input-label").addClass("error-label")
   })

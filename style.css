@@ -4,23 +4,28 @@ body {
 }
 
 .container.main {
-  display: grid;
-  margin: 85px;
-  grid-template-columns: 500px 755px;
-  justify-content: center;
-  align-content: stretch;
+  margin: 85px 0;
+}
+
+.row {
+    display: table;
+}
+
+[class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
 }
 
 #col-1 {
-  width: 100%;
   background: rgba(250, 250, 250, .5);
   color: #3d110e;
   font-family: Tahoma;
 }
 
-#col-1 .container {
+#col-1 .content {
   text-align: center;
-  margin: 30px 100px;
+  margin: 30px 75px;
 }
 
 #logo {
@@ -60,15 +65,17 @@ body {
 }
 
 #col-2 {
-  width: 100%;
+  /*width: 100%;*/
+  height: 100%;
   background: rgba(0, 0, 0, .6);
 }
 
+
 #col-2 .content {
+  margin-left: 150px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-left: 150px;
   color: #ffffff;
   font-family: Tahoma;
 }
@@ -100,7 +107,6 @@ a {
 
 #login > * {
   margin: 40px 0;
-
 }
 
 #login .username,
@@ -131,8 +137,8 @@ a {
   content: '';
   background-color: #c7b299;
   height: 1px;
-  width: 11px;
-  bottom: 45px;
+  width: 9px;
+  bottom: 43px;
   left: -1px;
 }
 
@@ -141,9 +147,9 @@ a {
   position: absolute;
   background-color: #c7b299;
   height: 1px;
-  width: 236px;
-  left: 100px;
-  bottom: 45px;
+  width: 230px;
+  left: 104px;
+  bottom: 43px;
 }
 
 .input-label {
@@ -152,7 +158,7 @@ a {
   font-size: 12pt;
   color: #c7b299;
   left: 10px;
-  bottom: 36px;
+  bottom: 29px;
   width: 90px;
   background-color: transparent;
   text-align: center;
@@ -173,12 +179,11 @@ a {
 }
 
 .button-container {
-  padding-top: 10px;
   width: 335px;
 }
 
 .create-account {
-  margin-top: 50px;
+  margin-top: 100px;
   font-family: Tahoma;
   font-size: 15pt;
   color: #fff;
@@ -189,6 +194,7 @@ a {
 }
 
 #login-error {
+  margin-top: 50px;
   width: 440px;
 }
 

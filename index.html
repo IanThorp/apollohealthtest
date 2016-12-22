@@ -2,43 +2,46 @@
 <html>
 <head>
   <title>Apollo Health Technologies Sign In</title>
-  <link rel="stylesheet" type="text/css" href="./style.css">
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
-  <div class="container main">
-    <section id="col-1">
-      <div class="container">
-        <img src="assets/logo.png" alt="Dharma Logo" id="logo">
-        <h1 class="header">Dolor Sit Amet</h1>
-        <p class="first-p">Consectetur adispiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p class="second-p">"Ut enim ad minim veniam, quis nostrud exercitation ullamco."</p>
-        <p class="third-p">Laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <footer>&copy; 2016 Dharma Inititiave</footer>
-      </div>
-    </section>
-    <section id="col-2">
-      <div class="container">
+<div class="container">
+  <div class="row">
+    <div class="container main">
+      <section id="col-1" class="col-md-5 col-sm-12">
         <div class="content">
-          <h1>Namaste!</h1>
-          <h2>Please Sign In.</h2>
-          <form id="login" method="POST" action="#">
-            <div class="input-container">
-              <label class="input-label">User Name</label>
-              <input class="username" type="text" name="username" placeholder="johnsmith@gmail.com">
-            </div>
-            <div class="input-container">
-              <label class="input-label">Password</label>
-              <input class="password" type="password" name="password">
-            </div>
-            <div class="button-container"><input id="submit" type="submit" name="login" value="Login">
-            <a class="forgot-link" href="#">Forgot Password?</a></div>
-          </form>
-          <p class="create-account">Don't have an Account? <a href="#">Sign Up Here!</a></p>
-          <div id="login-error"></div>
+          <img src="assets/logo.png" alt="Dharma Logo" id="logo">
+          <h1 class="header">Dolor Sit Amet</h1>
+          <p class="first-p">Consectetur adispiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="second-p">"Ut enim ad minim veniam, quis nostrud exercitation ullamco."</p>
+          <p class="third-p">Laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <footer>&copy; 2016 Dharma Inititiave</footer>
         </div>
-      </div>
-    </section>
+      </section>
+      <section id="col-2" class="col-md-7 col-sm-12">
+          <div class="content">
+            <h1>Namaste!</h1>
+            <h2>Please Sign In.</h2>
+            <form id="login" method="POST" action="#">
+              <div class="input-container">
+                <label class="input-label">User Name</label>
+                <input class="username" type="text" name="username" placeholder="johnsmith@gmail.com">
+              </div>
+              <div class="input-container">
+                <label class="input-label">Password</label>
+                <input class="password" type="password" name="password">
+              </div>
+              <div class="button-container"><input id="submit" type="submit" name="login" value="Login">
+              <a class="forgot-link" href="#">Forgot Password?</a></div>
+            </form>
+            <p class="create-account">Don't have an Account? <a href="#">Sign Up Here!</a></p>
+            <div id="login-error"></div>
+        </div>
+      </section>
+    </div>
+  </div>
   </div>
   <script src="./main.js"></script>
 </body>
