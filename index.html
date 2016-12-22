@@ -3,6 +3,7 @@
 <head>
   <title>Apollo Health Technologies Sign In</title>
   <link rel="stylesheet" type="text/css" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container main">
@@ -22,20 +23,20 @@
           <h1>Namaste!</h1>
           <h2>Please Sign In.</h2>
           <form id="login" method="POST" action="#">
-            <div class="username-container">
-              <label>User Name</label>
-              <input class="username" type="text" name="username">
+            <div class="input-container">
+              <label class="input-label">User Name</label>
+              <input class="username" type="text" name="username" placeholder="johnsmith@gmail.com">
             </div>
-            <div class="password-container">
-              <label>Password</label>
+            <div class="input-container">
+              <label class="input-label">Password</label>
               <input class="password" type="password" name="password">
             </div>
             <div class="button-container"><input id="submit" type="submit" name="login" value="Login">
             <a class="forgot-link" href="#">Forgot Password?</a></div>
           </form>
           <p class="create-account">Don't have an Account? <a href="#">Sign Up Here!</a></p>
+          <div id="login-error"></div>
         </div>
-        <div id="error"></div>
       </div>
     </section>
   </div>

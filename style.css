@@ -6,7 +6,7 @@ body {
 .container.main {
   display: grid;
   margin: 85px;
-  grid-template-columns: 520px 735px;
+  grid-template-columns: 500px 755px;
   justify-content: center;
   align-content: stretch;
 }
@@ -35,6 +35,11 @@ body {
   margin: 15px 0;  
 }
 
+#col-1 p {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
 #col-1 .first-p {
   font-size: 17pt;
 }
@@ -54,15 +59,16 @@ body {
   font-size: 11pt;
 }
 
-
 #col-2 {
   width: 100%;
   background: rgba(0, 0, 0, .6);
 }
 
-#col-2 .container {
-  text-align: left;
-  margin-left: 200px;
+#col-2 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 150px;
   color: #ffffff;
   font-family: Tahoma;
 }
@@ -77,78 +83,76 @@ a {
 #col-2 h1 {
   font-family: Impact;
   font-size: 34pt;
+  margin: 50px 0 0 0;
 }
 
 #col-2 h2 {
   color: #c7b299;
   font-family: Impact;
   font-size: 22pt;
+  margin: 5px 0 0 0;
 }
 
 #login {
   height: 200px;
-  width: 300px;
+  width: 100%;
 }
 
 #login > * {
-  margin: 20px 0;
+  margin: 40px 0;
+
 }
 
 #login .username,
 #login .password {
   background-color: transparent;
-  border: 1px solid #c7b299;
-  border-top: 0;
-  font-size: 15pt;
+  border: 0;
   color: #ffffff;
-  font-family: Tahoma;
-  height: 38px;
-  width: 100%;
+  font: 15pt Tahoma;
+  height: 43px;
+  width: 322px;
   padding-left: 10px;
-  font-weight: 100;
 }
 
 .password {
-  letter-spacing: 8px;
+  letter-spacing: 7px;
 }
 
 
-.username-container,
-.password-container {
+.input-container {
   position: relative;
-  width: 100%;
+  width: 335px;
+  border: 1px solid #c7b299;
+  border-top: 0;
 }
 
-.username-container::after,
-.password-container::after {
+.input-container::after {
   position: absolute;
   content: '';
   background-color: #c7b299;
   height: 1px;
-  width: 10px;
-  bottom: 40px;
-  left: 0px;
+  width: 11px;
+  bottom: 45px;
+  left: -1px;
 }
 
-.username-container::before,
-.password-container::before {
+.input-container::before {
   content: '';
   position: absolute;
   background-color: #c7b299;
   height: 1px;
-  width: 213px;
+  width: 236px;
   left: 100px;
-  bottom: 40px;
+  bottom: 45px;
 }
 
-.username-container label,
-.password-container label {
+.input-label {
   position: absolute;
   font-family: Tahoma;
   font-size: 12pt;
   color: #c7b299;
   left: 10px;
-  bottom: 31px;
+  bottom: 36px;
   width: 90px;
   background-color: transparent;
   text-align: center;
@@ -160,17 +164,17 @@ a {
   font-family: Impact;
   font-size: 18pt;
   border: none;
-  width: 120px;
+  width: 150px;
   height: 45px;
 }
 
 .button-container a {
-  margin-left: 15px;
+  margin-left: 24px;
 }
 
 .button-container {
   padding-top: 10px;
-  width: 100%;
+  width: 335px;
 }
 
 .create-account {
@@ -183,3 +187,28 @@ a {
 .create-account a {
   color: #c7b299;
 }
+
+#login-error {
+  width: 440px;
+}
+
+.error-text {
+  color: #ed3237;
+  font: 15pt Tahoma;
+}
+
+.error-input {
+  background-color: rgba( 237, 50, 55, .2);
+  border-color: #ed3237;
+}
+
+.error-input::after,
+.error-input::before {
+  background-color: #ed3237;
+}
+
+.error-label {
+  color: #ed3237;
+}
+
+
