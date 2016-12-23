@@ -231,7 +231,7 @@ a {
   #col-1 .content,
   #col-2 .content {
     margin: 25px;
-    width: 80%;
+    width: 350px;
   }
 
   #col-1 .content {
@@ -241,6 +241,10 @@ a {
 
   #col-2 .content {
     margin-top: 0;
+  }
+
+  .row {
+    width: 475px;
   }
 
   .container {
