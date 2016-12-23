@@ -1,0 +1,259 @@
+body {
+  background-image: url(assets/background.jpg);
+  background-size: cover;
+}
+
+.main {
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+@media (min-width: 540px) {
+
+  .main {
+    margin: 85px 0;
+  }
+
+  .row {
+      display: table;
+  }
+
+  [class*="col-"] {
+      float: none;
+      display: table-cell;
+      vertical-align: top;
+  }
+}
+
+#col-1 {
+  background: rgba(250, 250, 250, .5);
+  color: #3d110e;
+  font-family: Tahoma;
+}
+
+#col-1 .content {
+  text-align: center;
+  margin: 30px 75px;
+  width: 308px;
+}
+
+#logo {
+  margin-right: auto;
+  margin-left: auto;
+  width: 75px;
+  height: 75px;
+}
+
+#col-1 .header {
+  font: 31pt Impact;
+  margin: 15px 0;  
+}
+
+#col-1 p {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+#col-1 .first-p {
+  font-size: 17pt;
+}
+
+#col-1 .second-p {
+  font-size: 22pt;
+}
+
+#col-1 .third-p {
+  font-size: 17pt;
+  margin-bottom: 50px;
+}
+
+#col-1 footer {
+  color: #5d1d19;
+  font-weight: bold;
+  font-size: 11pt;
+}
+
+#col-2 {
+  height: 100%;
+  background: rgba(0, 0, 0, .6);
+}
+
+
+#col-2 .content {
+  margin-left: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #ffffff;
+  font-family: Tahoma;
+  width: 500px;
+}
+
+a {
+  text-decoration: none;
+  color: #c7b299;
+  font-family: Tahoma;
+  font-size: 15pt;
+}
+
+#col-2 h1 {
+  font-family: Impact;
+  font-size: 34pt;
+  margin: 50px 0 0 0;
+}
+
+#col-2 h2 {
+  color: #c7b299;
+  font-family: Impact;
+  font-size: 22pt;
+  margin: 5px 0 0 0;
+}
+
+#login {
+  height: 200px;
+  width: 100%;
+}
+
+#login > * {
+  margin: 40px 0;
+}
+
+#login .username,
+#login .password {
+  background-color: transparent;
+  border: 0;
+  color: #ffffff;
+  font: 15pt Tahoma;
+  height: 43px;
+  width: 322px;
+  padding-left: 10px;
+}
+
+.password {
+  letter-spacing: 7px;
+}
+
+
+.input-container {
+  position: relative;
+  width: 335px;
+  border: 1px solid #c7b299;
+  border-top: 0;
+}
+
+.input-container::after {
+  position: absolute;
+  content: '';
+  background-color: #c7b299;
+  height: 1px;
+  width: 9px;
+  bottom: 43px;
+  left: -1px;
+}
+
+.input-container::before {
+  content: '';
+  position: absolute;
+  background-color: #c7b299;
+  height: 1px;
+  width: 230px;
+  left: 104px;
+  bottom: 43px;
+}
+
+.input-label {
+  position: absolute;
+  font-family: Tahoma;
+  font-size: 12pt;
+  color: #c7b299;
+  left: 10px;
+  bottom: 29px;
+  width: 90px;
+  background-color: transparent;
+  text-align: center;
+}
+
+#login #submit {
+  background-color: #c7b299;
+  color: #5b1d19;
+  font-family: Impact;
+  font-size: 18pt;
+  border: none;
+  width: 150px;
+  height: 45px;
+}
+
+.button-container a {
+  margin-left: 24px;
+}
+
+.button-container {
+  width: 335px;
+}
+
+.create-account {
+  margin-top: 100px;
+  font-family: Tahoma;
+  font-size: 15pt;
+  color: #fff;
+}
+
+.create-account a {
+  color: #c7b299;
+}
+
+#login-error {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.error-text {
+  color: #ed3237;
+  font: 15pt Tahoma;
+}
+
+.error-input {
+  background-color: rgba( 237, 50, 55, .2);
+  border-color: #ed3237;
+}
+
+.error-input::after,
+.error-input::before {
+  background-color: #ed3237;
+}
+
+.error-label {
+  color: #ed3237;
+}
+
+@media (max-width: 540px) {
+
+  #col-1 .content,
+  #col-2 .content {
+    margin: 25px;
+    width: 350px;
+  }
+
+  #col-1 .content {
+    margin-bottom: 0;
+    padding-bottom: 25px;
+  }
+
+  #col-2 .content {
+    margin-top: 0;
+  }
+
+  .row {
+    width: 475px;
+  }
+
+  .container {
+    padding-bottom: 25px;
+  }
+
+  #logo {
+    margin-top: 25px;
+  }
+
+}
+
